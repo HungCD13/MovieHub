@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Netflix Clone</title>
+  <link rel="stylesheet" href="./css/home.css">
+  <script defer src="https://use.fontawesome.com/releases/v5.1.0/js/all.js"></script>
+  <script src="./js/home.js" defer></script>
+</head>
+<body>
+  <div class="wrapper">
+    <!-- HEADER -->
+    <header>
+      <div class="netflixLogo">
+        <a id="logo" href="#home"><img src="/img/logo.png" alt="MovieHub Logo"></a>
+      </div>      
+      <nav class="main-nav">                
+        <a href="#logo">Home</a>
+        <a href="./pages/tv-show.html">TV Shows</a>
+        <a href="#">Movies</a>
+        <a href="#">Local Hits</a>
+        <a href="#">My List</a>
+      </nav>
+<!-- Thêm vào trong thẻ <header> -->
+      <nav class="sub-nav">
+        <!-- Thanh tìm kiếm -->
+        <div class="search-container">
+          <div class="search-icon">
+            <i class="fas fa-search"></i>
+          </div>
+          <div class="search-box">
+            <input type="text" placeholder="Tìm kiếm phim, diễn viên...">
+            <button class="clear-search"><i class="fas fa-times"></i></button>
+          </div>
+        </div>
+      
+        <!-- Thông báo -->
+        <div class="notification-container">
+          <div class="notification-icon">
+            <i class="fas fa-bell"></i>
+            <span class="notification-badge">3</span>
+          </div>
+          <div class="notification-dropdown">
+            <div class="notification-header">
+              <h4>Thông báo mới</h4>
+              <button class="mark-all-read">Đánh dấu đã đọc</button>
+            </div>
+            <div class="notification-list">
+              <div class="notification-item unread">
+                <div class="notification-icon"><i class="fas fa-tag"></i></div>
+                <div class="notification-content">
+                  <p>Phim <strong>Stranger Things</strong> vừa được cập nhật tập mới</p>
+                  <span class="notification-time">2 giờ trước</span>
+                </div>
+              </div>
+              <!-- Thêm các thông báo khác -->
+            </div>
+          </div>
+        </div>
+      
+        <a href="./pages/signin.html">Account</a>
+      </nav>     
+    </header>
+    
+    <!-- BANNER -->
+    <section class="banner">
+      <div class="banner-content">
+        <h1>Stranger Things</h1>
+        <p>When a young boy vanishes, a small town uncovers a mystery involving secret experiments, terrifying supernatural forces and one strange little girl.</p>
+        <div class="banner-buttons">
+          <a href="./product.html" class="play-button">
+            <i class="fas fa-play"></i> Play
+          </a>
+          <button class="info-button"><i class="fas fa-info-circle"></i> More Info</button>
+        </div>
+      </div>
+    </section>
+    
+    <!-- MAIN CONTENT -->
+    <main class="main-container">
+      <section class="movie-section">
+        <h2>Popular on MovieHub</h2>
+        <div class="movie-row">
+          <div class="movie-item" data-id="The Witcher">
+            <img src="https://github.com/carlosavilae/Netflix-Clone/blob/master/img/p1.PNG?raw=true" alt="Movie 1">
+          </div>
+          <div class="movie-item">
+            <img src="https://github.com/carlosavilae/Netflix-Clone/blob/master/img/p2.PNG?raw=true" alt="Movie 2">
+          </div>
+          <div class="movie-item">
+            <img src="https://github.com/carlosavilae/Netflix-Clone/blob/master/img/p3.PNG?raw=true" alt="Movie 3">
+          </div>
+          <div class="movie-item">
+            <img src="https://github.com/carlosavilae/Netflix-Clone/blob/master/img/p4.PNG?raw=true" alt="Movie 4">
+          </div>
+        </div>
+      </section>
+
+      <section class="movie-section">
+        <h2>Trending Now</h2>
+        <div class="movie-row">
+          <div class="movie-item">
+            <img src="https://github.com/carlosavilae/Netflix-Clone/blob/master/img/t1.PNG?raw=true" alt="Trending 1">
+          </div>
+          <div class="movie-item">
+            <img src="https://github.com/carlosavilae/Netflix-Clone/blob/master/img/t2.PNG?raw=true" alt="Trending 2">
+          </div>
+          <div class="movie-item">
+            <img src="https://github.com/carlosavilae/Netflix-Clone/blob/master/img/t3.PNG?raw=true" alt="Trending 3">
+          </div>
+          <div class="movie-item">
+            <img src="https://github.com/carlosavilae/Netflix-Clone/blob/master/img/t4.PNG?raw=true" alt="Trending 4">
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="social-links">
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+      </div>
+      <div class="footer-links">
+        <a href="#">Terms of Service</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Help Center</a>
+      </div>
+      <p>&copy;2025 moviehub</p>
+    </footer>
+  </div>
+</body>
+</html>

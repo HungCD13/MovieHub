@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Netflix Clone - TV Shows</title>
+  <link rel="stylesheet" href="../css/home.css">
+  <script defer src="https://use.fontawesome.com/releases/v5.1.0/js/all.js"></script>
+  <script src="../js/home.js" defer></script>
+</head>
+<body>
+  <div class="wrapper">
+    <header>
+      <div class="netflixLogo">
+        <a id="logo" href="#home"><img src="./img/logo.png" alt="MovieHub Logo"></a>
+      </div>      
+      <nav class="main-nav">                
+        <a href="#logo">Home</a>
+        <a href="./tv-show.html">TV Shows</a>
+        <a href="#movies">Movies</a>
+        <a href="#originals">Local Hits</a>
+        <a href="#">My List</a>
+      </nav>
+<!-- Thêm vào trong thẻ <header> -->
+  <nav class="sub-nav">
+    <!-- Thanh tìm kiếm -->
+    <div class="search-container">
+      <div class="search-icon">
+        <i class="fas fa-search"></i>
+      </div>
+      <div class="search-box">
+        <input type="text" placeholder="Tìm kiếm phim, diễn viên...">
+        <button class="clear-search"><i class="fas fa-times"></i></button>
+      </div>
+    </div>
+  
+    <!-- Thông báo -->
+    <div class="notification-container">
+      <div class="notification-icon">
+        <i class="fas fa-bell"></i>
+        <span class="notification-badge">3</span>
+      </div>
+      <div class="notification-dropdown">
+        <div class="notification-header">
+          <h4>Thông báo mới</h4>
+          <button class="mark-all-read">Đánh dấu đã đọc</button>
+        </div>
+        <div class="notification-list">
+          <div class="notification-item unread">
+            <div class="notification-icon"><i class="fas fa-tag"></i></div>
+            <div class="notification-content">
+              <p>Phim <strong>Stranger Things</strong> vừa được cập nhật tập mới</p>
+              <span class="notification-time">2 giờ trước</span>
+            </div>
+          </div>
+          <!-- Thêm các thông báo khác -->
+        </div>
+      </div>
+    </div>
+  
+    <a href="./signin.html">Account</a>
+  </nav>     
+    </header>
+    
+    <!-- Banner riêng cho TV Shows -->
+    <section class="banner" style="background: linear-gradient(to top, #141414 0%, transparent 50%), url('https://image.tmdb.org/t/p/original/5zmiBoMzeeVdQ62no55JOJMY498.jpg') center/cover no-repeat;">
+      <div class="banner-content">
+        <h1>TV Shows</h1>
+        <p>Browse through our extensive collection of TV shows from various genres and countries.</p>
+      </div>
+    </section>
+    
+    <!-- Nội dung chính TV Shows -->
+    <main class="main-container">
+      <section class="full-category">
+        <h2>All TV Shows</h2>
+        <div class="movie-row">
+          <!-- Tất cả ảnh TV Shows -->
+        </div>
+      </section>
+
+      <section class="sub-category">
+        <h3>Drama Series</h3>
+        <div class="movie-row">
+          <!-- Ảnh drama -->
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <!-- Footer giống trang chủ -->
+    </footer>
+  </div>
+</body>
+</html>
