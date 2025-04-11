@@ -1,4 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
+  
   // ========== HEADER EFFECTS ========== //
   const header = document.querySelector('header');
   
