@@ -1,0 +1,178 @@
+{
+    "movies": {
+      "1": {
+        "title": "Stranger Things",
+        "banner": "https://image.tmdb.org/t/p/original/56v2KjBlU4XaOv9rVYEQypROD7P.jpg",
+        "match": "98% Match",
+        "year": "2016",
+        "seasons": "4",
+        "rating": "8.7",
+        "quality": "HD",
+        "synopsis": "When a young boy vanishes, a small town uncovers a mystery involving secret experiments, terrifying supernatural forces and one strange little girl.",
+        "cast": "Millie Bobby Brown, Finn Wolfhard, Winona Ryder, David Harbour",
+        "genres": "Sci-Fi & Fantasy, Teen TV, Horror",
+        "mood": "Dark, Exciting, Nostalgic",
+        "episodes": [
+          {
+            "number": "1",
+            "title": "Chapter One: The Hellfire Club",
+            "image": "https://github.com/carlosavilae/Netflix-Clone/blob/master/img/tv3.PNG?raw=true",
+            "description": "Eleven's plans for spring break are ruined when she loses a battle with the school bully. Meanwhile, a new horror begins in Hawkins.",
+            "duration": "76m"
+          },
+          {
+            "number": "2",
+            "title": "Chapter Two: Vecna's Curse",
+            "image": "https://github.com/carlosavilae/Netflix-Clone/blob/master/img/tv4.PNG?raw=true",
+            "description": "After defeating the Demogorgon, the group faces new threats from the Upside Down. Max begins having terrifying visions.",
+            "duration": "68m"
+          }
+        ],
+        "reviews": [
+          {
+            "user": "Mike Johnson",
+            "avatar": "https://randomuser.me/api/portraits/men/32.jpg",
+            "rating": 4,
+            "text": "The new season takes the show to a whole new level. The acting, especially from Millie Bobby Brown, is phenomenal!",
+            "date": "Posted on June 5, 2023"
+          }
+        ],
+        "similar": [
+          {
+            "id": "2",
+            "title": "The Witcher",
+            "image": "https://github.com/carlosavilae/Netflix-Clone/blob/master/img/p1.PNG?raw=true"
+          },
+          {
+            "id": "3",
+            "title": "Dark",
+            "image": "https://github.com/carlosavilae/Netflix-Clone/blob/master/img/p3.PNG?raw=true"
+          },
+          {
+            "id": "4",
+            "title": "Umbrella Academy",
+            "image": "https://github.com/carlosavilae/Netflix-Clone/blob/master/img/o2.PNG?raw=true"
+          },
+          {
+            "id": "5",
+            "title": "Daredevil",
+            "image": "https://github.com/carlosavilae/Netflix-Clone/blob/master/img/o5.PNG?raw=true"
+          }
+        ],
+        "videos": [
+          {
+            "type": "Trailer",
+            "url": "https://www.youtube.com/embed/9Egf5U8xLo8",
+            "thumbnail": "https://img.youtube.com/vi/9Egf5U8xLo8/maxresdefault.jpg"
+          }
+        ]
+      },
+      "2": {
+        "title": "The Witcher",
+        "banner": "https://image.tmdb.org/t/p/original/7WUHnWGx5OO145IRxPDUkQSh4C7.jpg",
+        "match": "95% Match",
+        "year": "2019",
+        "seasons": "3",
+        "rating": "8.2",
+        "quality": "4K",
+        "synopsis": "Geralt of Rivia, a mutated monster-hunter for hire, journeys toward his destiny in a turbulent world where people often prove more wicked than beasts.",
+        "cast": "Henry Cavill, Anya Chalotra, Freya Allan",
+        "genres": "Fantasy, Adventure, Action",
+        "mood": "Dark, Exciting, Violent",
+        "episodes": [],
+        "reviews": [],
+        "similar": [],
+        "videos": [
+          {
+            "type": "Trailer",
+            "url": "https://www.youtube.com/embed/ndl1W4ltcmg",
+            "thumbnail": "https://img.youtube.com/vi/ndl1W4ltcmg/maxresdefault.jpg"
+          }
+        ]
+      },
+      "3": {
+        "title": "Money Heist",
+        "banner": "https://image.tmdb.org/t/p/original/reEMJA1uzscCbkpeRJeTT2bjqUp.jpg",
+        "match": "98% Match",
+        "year": "2017",
+        "seasons": "5",
+        "rating": "8.3",
+        "quality": "HD",
+        "synopsis": "A criminal mastermind who goes by 'The Professor' has a plan to pull off the biggest heist in recorded history - to print billions of euros in the Royal Mint of Spain.",
+        "cast": [
+          {
+            "name": "Álvaro Morte",
+            "character": "The Professor",
+            "photo": "https://image.tmdb.org/t/p/w185/6aOjYVyV9wjvA2fH4Nq6xFi2Xwi.jpg"
+          },
+          {
+            "name": "Úrsula Corberó",
+            "character": "Tokyo",
+            "photo": "https://image.tmdb.org/t/p/w185/7d6N5dUBdkV5zED7sJSjbQ+5+u.jpg"
+          }
+        ],
+        "genres": ["Crime", "Drama", "Thriller"],
+        "mood": ["Suspenseful", "Tense", "Exciting"],
+        "episodes": [
+          {
+            "season": 1,
+            "number": 1,
+            "title": "Do as Planned",
+            "image": "https://image.tmdb.org/t/p/w780/1Wlwnhn5sXUIxgxpU7oJThYH5y6.jpg",
+            "description": "The Professor recruits a young female robber and seven other criminals for a grand heist.",
+            "duration": "50m",
+            "rating": "8.5"
+          }
+        ],
+        "reviews": [
+          {
+            "author": "Emma Stone",
+            "avatar": "https://image.tmdb.org/t/p/w185/6aOjYVyV9wjvA2fH4Nq6xFi2Xwi.jpg",
+            "rating": 5,
+            "content": "One of the most intense and clever heist dramas ever made!",
+            "date": "2022-03-15"
+          }
+        ],
+        "similar": [
+          {
+            "id": "101",
+            "title": "Elite",
+            "poster": "https://image.tmdb.org/t/p/w185/3NTAbAiao4JLzFQw6YxP1YZppM8.jpg"
+          }
+        ],
+        "videos": [
+          {
+            "type": "Trailer",
+            "url": "https://www.youtube.com/embed/_InqQJRqGW4",
+            "thumbnail": "https://img.youtube.com/vi/_InqQJRqGW4/maxresdefault.jpg"
+          }
+        ]
+      },
+      "4": {
+        "title": "Avengers: Endgame",
+        "banner": "https://github.com/carlosavilae/Netflix-Clone/blob/master/img/p1.PNG?raw=true",
+        "match": "99% Match",
+        "year": "2019",
+        "rating": "8.4",
+        "quality": "4K",
+        "synopsis": "After the devastating events of Avengers: Infinity War, the universe is in ruins. With the help of remaining allies, the Avengers assemble once more in order to reverse Thanos' actions and restore balance to the universe.",
+        "cast": "Robert Downey Jr., Chris Evans, Mark Ruffalo, Chris Hemsworth",
+        "genres": "Action, Adventure, Sci-Fi",
+        "mood": "Epic, Exciting, Emotional",
+        "similar": [
+          {
+            "id": "6",
+            "title": "Avengers: Infinity War",
+            "image": "https://github.com/carlosavilae/Netflix-Clone/blob/master/img/p2.PNG?raw=true"
+          }
+        ],
+        "videos": [
+          {
+            "type": "Trailer",
+            "url": "https://www.youtube.com/embed/TcMBFSGVi1c",
+            "thumbnail": "https://img.youtube.com/vi/TcMBFSGVi1c/maxresdefault.jpg"
+          }
+        ]
+      }
+    }
+  }
