@@ -22,7 +22,6 @@
         <a href="#">Local Hits</a>
         <a href="#">My List</a>
       </nav>
-<!-- Thêm vào trong thẻ <header> -->
       <nav class="sub-nav">
         <!-- Thanh tìm kiếm -->
         <div class="search-container">
@@ -63,20 +62,63 @@
       </nav>     
     </header>
     
-    <!-- BANNER -->
+      <!-- BANNER -->
     <section class="banner">
-      <div class="banner-content">
-        <h1>Stranger Things</h1>
-        <p>When a young boy vanishes, a small town uncovers a mystery involving secret experiments, terrifying supernatural forces and one strange little girl.</p>
-        <div class="banner-buttons">
-          <a href="./product.html" class="play-button">
-            <i class="fas fa-play"></i> Play
-          </a>
-          <button class="info-button"><i class="fas fa-info-circle"></i> More Info</button>
+      <div class="banner-slides">
+        <!-- Slide 1 - Stranger Things -->
+        <div class="banner-slide active" style="background-image: linear-gradient(to right, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.3) 100%), url('https://image.tmdb.org/t/p/original/56v2KjBlU4XaOv9rVYEQypROD7P.jpg')">
+          <div class="banner-content">
+            <h1>Stranger Things</h1>
+            <p>When a young boy vanishes, a small town uncovers a mystery involving secret experiments, terrifying supernatural forces and one strange little girl.</p>
+            <div class="banner-buttons">
+              <a href="./pages/product.html?id=1" class="play-button">
+                <i class="fas fa-play"></i> Play
+              </a>
+              <button class="info-button"><i class="fas fa-info-circle"></i> More Info</button>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Slide 2 - The Witcher -->
+        <div class="banner-slide" style="background-image: linear-gradient(to right, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.3) 100%), url('https://image.tmdb.org/t/p/original/7WUHnWGx5OO145IRxPDUkQSh4C7.jpg')">
+          <div class="banner-content">
+            <h1>The Witcher</h1>
+            <p>Geralt of Rivia, a mutated monster-hunter for hire, journeys toward his destiny in a turbulent world where people often prove more wicked than beasts.</p>
+            <div class="banner-buttons">
+              <a href="./pages/product.html?id=2" class="play-button">
+                <i class="fas fa-play"></i> Play
+              </a>
+              <button class="info-button"><i class="fas fa-info-circle"></i> More Info</button>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Slide 3 - Money Heist -->
+        <div class="banner-slide" style="background-image: linear-gradient(to right, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.3) 100%), url('https://image.tmdb.org/t/p/original/reEMJA1uzscCbkpeRJeTT2bjqUp.jpg')">
+          <div class="banner-content">
+            <h1>Money Heist</h1>
+            <p>Eight thieves take hostages and lock themselves in the Royal Mint of Spain as a criminal mastermind manipulates the police to carry out his plan.</p>
+            <div class="banner-buttons">
+              <a href="./pages/product.html?id=3" class="play-button">
+                <i class="fas fa-play"></i> Play
+              </a>
+              <button class="info-button"><i class="fas fa-info-circle"></i> More Info</button>
+            </div>
+          </div>
         </div>
       </div>
+      
+      <!-- Banner controls -->
+      <div class="banner-controls">
+        <button class="banner-prev"><i class="fas fa-chevron-left"></i></button>
+        <div class="banner-dots">
+          <span class="dot active"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </div>
+        <button class="banner-next"><i class="fas fa-chevron-right"></i></button>
+      </div>
     </section>
-    
     <!-- MAIN CONTENT -->
     <main class="main-container">
       <section class="movie-section">

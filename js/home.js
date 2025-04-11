@@ -104,4 +104,74 @@ document.addEventListener('DOMContentLoaded', function() {
     document.body.classList.remove('loading');
     console.log('Netflix Clone loaded successfully!');
   });
+  // ========== BANNER SLIDER ========== //
+  const bannerSlides = document.querySelectorAll('.banner-slide');
+  const dots = document.querySelectorAll('.banner-dots .dot');
+  const prevBtn = document.querySelector('.banner-prev');
+  const nextBtn = document.querySelector('.banner-next');
+  let currentSlide = 0;
+  let slideInterval;
+
+  function showSlide(index) {
+    // Hide all slides
+    bannerSlides.forEach(slide => slide.classList.remove('active'));
+    dots.forEach(dot => dot.classList.remove('active'));
+    
+    // Show current slide
+    bannerSlides[index].classList.add('active');
+    dots[index].classList.add('active');
+    currentSlide = index;
+  }
+
+  function nextSlide() {
+    currentSlide = (currentSlide + 1) % bannerSlides.length;
+    showSlide(currentSlide);
+  }
+
+  function prevSlide() {
+    currentSlide = (currentSlide - 1 + bannerSlides.length) % bannerSlides.length;
+    showSlide(currentSlide);
+  }
+
+  // Auto slide
+  function startSlideShow() {
+    slideInterval = setInterval(nextSlide, 5000);
+  }
+
+  // Event listeners
+  nextBtn.addEventListener('click', () => {
+    nextSlide();
+    resetInterval();
+  });
+
+  prevBtn.addEventListener('click', () => {
+    prevSlide();
+    resetInterval();
+  });
+
+  dots.forEach((dot, index) => {
+    dot.addEventListener('click', () => {
+      showSlide(index);
+      resetInterval();
+    });
+  });
+
+  function resetInterval() {
+    clearInterval(slideInterval);
+    startSlideShow();
+  }
+
+  // Initialize
+  showSlide(0);
+  startSlideShow();
+
+  // Pause on hover
+  const banner = document.querySelector('.banner');
+  banner.addEventListener('mouseenter', () => {
+    clearInterval(slideInterval);
+  });
+
+  banner.addEventListener('mouseleave', () => {
+    startSlideShow();
+});
 });

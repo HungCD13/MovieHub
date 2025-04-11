@@ -243,18 +243,64 @@ header.scrolled {
 .banner {
   position: relative;
   height: 70vh;
-  background: var(--banner-gradient),
-              url('https://image.tmdb.org/t/p/original/56v2KjBlU4XaOv9rVYEQypROD7P.jpg') center/cover no-repeat;
+  overflow: hidden;
+  margin-top: 68px;
+}
+
+.banner-slides {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+.banner-slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   display: flex;
   align-items: flex-end;
   padding: 0 40px 60px;
-  margin-top: 68px;
+  opacity: 0;
+  transition: opacity 1.5s ease-in-out;
+}
+
+/* Thêm lớp phủ gradient mờ từ dưới lên */
+.banner-slide::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 30%; /* Chiếm 30% chiều cao từ dưới lên */
+  background: linear-gradient(to top, rgba(0,0,0,0.8) 0%, transparent 100%);
+  z-index: 1;
+}
+
+.banner-slide.active {
+  opacity: 1;
 }
 
 .banner-content {
   max-width: 600px;
+  transform: translateY(20px);
+  opacity: 0;
+  transition: all 1s ease 0.3s;
+  position: relative;
+  z-index: 2; /* Đảm bảo nội dung hiển thị trên lớp phủ */
+  margin-bottom: 20px; /* Cách đáy một chút */
 }
 
+.banner-slide.active .banner-content {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+/* Các style còn lại giữ nguyên */
 .banner h1 {
   font-size: 3rem;
   margin-bottom: 20px;
@@ -266,6 +312,74 @@ header.scrolled {
   margin-bottom: 20px;
   line-height: 1.5;
   text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+}
+
+/* Các style còn lại giữ nguyên */
+.banner h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+.banner p {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+  line-height: 1.5;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+}
+
+.banner-buttons {
+  display: flex;
+  gap: 15px;
+}
+
+/* Banner controls */
+.banner-controls {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  z-index: 10;
+}
+
+.banner-prev, .banner-next {
+  background: rgba(255,255,255,0.2);
+  border: none;
+  color: white;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.banner-prev:hover, .banner-next:hover {
+  background: rgba(255,255,255,0.4);
+}
+
+.banner-dots {
+  display: flex;
+  gap: 10px;
+}
+
+.banner-dots .dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.5);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.banner-dots .dot.active {
+  background: white;
+  transform: scale(1.2);
 }
 
 .banner-buttons {
